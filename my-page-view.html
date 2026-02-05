@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>KSPO 국민체육진흥공단 - 사내 AI 비서</title>
+		<meta name="description" content="Page Title">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, minimal-ui">
+		<!-- Call App Mode on ios devices -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<!-- Remove Tap Highlight on Windows Phone IE -->
+		<meta name="msapplication-tap-highlight" content="no">
+		<!-- base css -->
+		<link rel="stylesheet" media="screen, print" href="css/vendors.bundle.css">
+		<link rel="stylesheet" media="screen, print" href="css/app.bundle.css">
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+		<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+
+		<link rel="stylesheet" media="screen, print" href="css/notifications/sweetalert2/sweetalert2.bundle.css">
+
+		<link rel="stylesheet" media="screen, print" href="css/fa-duotone.css">
+
+		<link rel="stylesheet" media="screen, print" href="css/custom_saltlux.css">
+		
+	</head>
+	<body class="namux-bg mod-nav-link">
+		<!-- BEGIN Page Wrapper -->
+		<div class="page-wrapper">
+			<div class="page-inner">
+				<div class="leftBar">
+					<img src="img/left-logo.png">
+				</div>
+				<!-- BEGIN Left Aside -->
+				<aside class="page-sidebar">
+					<div class="page-logo">
+						<a href="#" class="page-logo-link press-scale-down position-relative text-dark">
+							<img src="img/logo.svg" class="page-logo-text" alt="KSPO 사내 AI 플랫폼" aria-roledescription="logo">
+							<span class="page-logo-text mt-1">사내 AI 플랫폼</span>
+						</a>
+					</div>
+					<div id="sideMain" class="panel-nav-btn btn-pc">
+						<a href="javascript:void(0);" class="header-btn btn js-waves-off shadow-sm" data-action="toggle" data-class="nav-function-minify" title="메뉴접기/펼치기">
+							&nbsp;
+						</a>
+					</div>
+					<!-- BEGIN PRIMARY NAVIGATION -->
+					<nav id="js-primary-nav" class="primary-nav" role="navigation">
+						<div class="nav-menu-full">
+							<div class="mt-3">
+								<button type="button" class="btn btn-new btn-pills btn-sm btn-block waves-effect waves-themed text-white shadow-none fw-700" onclick="location.href='chat.html'"><i class="fad fa-plus mr-2"></i> 새 대화</button>
+							</div>
+							<div class=" border-bottom border-default pb-3">
+								<div class="nav-title">
+									<i class="fad fa-alarm-clock text-success mr-2"></i>  대화 목록
+								</div>
+								<div class="scroll_list"><!-- 더보기 버튼 클릭 시, scroll 활성화 -->
+									<ul id="js-nav-menu" class="nav-menu">
+										<!-- 마우스 오버시 저장 및 삭제 버튼 활성화 -->
+										<li><a href="chat.html'" title="">체육시설 안전점검 결과를 바로 볼 수 있도록</a><span class="hidden-button"><button class="btn btn-xs btn-light" data-toggle="modal" data-target="#group-admin"><i class="fal fa-download" title="저장"></i></button> <button class="btn btn-xs btn-light" id="js-sweetalert2-example-8"><i class="fal fa-trash-alt" title="삭제"></i></button></span></li>
+										<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을</a></li>
+										<li><a href="#" title="">문서 내 주요 키워드를 자동 추출해줘</a></li>
+										<li><a href="#" title="">[업무특화] 전 직원 대상 청렴주간 행사를 위한</a></li>
+										<li><a href="#" title="">직원이 겸직 허가를 받은 경우, 허가 범위가 어떻게</a></li>
+										<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을</a></li>
+										<li><a href="#" title="">문서 내 주요 키워드를 자동 추출해줘</a></li>
+										<li><a href="#" title="">[업무특화] 전 직원 대상 청렴주간 행사를 위한</a></li>
+										<li><a href="#" title="">직원이 겸직 허가를 받은 경우, 허가 범위가 어떻게</a></li>
+									</ul>
+								</div>
+								<div><button type="button" class="btn btn-block btn-light waves-effect waves-themed shadow-none mt-2">더보기 <i class="fad fa-angle-down ml-2"></i></button></div>
+							</div>
+							<div class=" border-bottom border-default pb-3">
+								<div class="nav-title">
+									<i class="fad fa-bookmark text-success mr-1"></i> 저장 대화 <span><a href="my-page.html"><i class="fad fa-plus fs-sm"></i></a></span>
+								</div>
+								<div class="scroll_list">
+									<ul id="js-nav-menu" class="nav-menu">
+										<!-- 마우스 오버시 수정(제목변경) 및 삭제 버튼 활성화 -->
+										<li><a href="#" title="">체육시설 안전점검 결과를 바로 볼 수 있도록</a><span class="hidden-button"><button class="btn btn-xs btn-light"><i class="fal fa-edit" title="제목변경"></i></button> <button class="btn btn-xs btn-light" id="js-sweetalert2-example-8"><i class="fal fa-trash-alt" title="삭제"></i></button></span></li>
+										<li><!-- 수정 모드일때 -->
+											<div class="input-group">
+												<input type="text" class="form-control form-control-sm" value="[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을" aria-describedby="button-addon5">
+												<div class="input-group-append">
+													<button class="btn btn-sm btn-primary waves-effect waves-themed shadow-none text-dark" type="button" id="button-addon5"><i class="fal fa-check text-white" title="확인"></i></button>
+													<button class="btn btn-sm btn-light waves-effect waves-themed shadow-none" type="button" id="button-addon5"><i class="fal fa-times" title="취소"></i></button>
+												</div>
+											</div>
+										</li>
+										<li><a href="#" title="">문서 내 주요 키워드를 자동 추출해줘</a></li>
+										<li><a href="#" title="">[업무특화] 전 직원 대상 청렴주간 행사를 위한</a></li>
+										<li><a href="#" title="">직원이 겸직 허가를 받은 경우, 허가 범위가 어떻게</a></li>
+										<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을</a></li>
+									</ul>
+								</div>
+								<div><button type="button" class="btn btn-block btn-light waves-effect waves-themed shadow-none mt-2">더보기 <i class="fad fa-angle-down ml-2"></i></button></div>
+							</div>
+						</div>
+
+						<!-- 좌측 패널 접힘 상태 -->
+						<ul class="nav-menu-s mt-3">
+							<li>
+								<button type="button" id="mainList" class="btn btn-new btn-block waves-effect waves-themed text-black shadow-none fw-700" title="새 대화" onclick="location.href='chat.html'"><i class="fad fa-plus text-white" data-template="&lt;div class=&quot;tooltip&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;tooltip-inner bg-primary text-white&quot;&gt;&lt;/div&gt;&lt;/div&gt;" data-toggle="tooltip" title="" data-placement="right" data-original-title="새 대화"></i></button>
+							</li>
+							<li>
+								<button type="button" id="newList" class="btn btn-light btn-block waves-effect waves-themed text-black shadow-none fw-700 pl-0 pr-0" title="대화 목록"  data-action="toggle" data-class="d-none" data-target="#newList-container"><i class="fad fa-alarm-clock text-success fs-xl" data-template="&lt;div class=&quot;tooltip&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;tooltip-inner bg-primary text-white&quot;&gt;&lt;/div&gt;&lt;/div&gt;" data-toggle="tooltip" title="" data-placement="right" data-original-title="대화 목록"></i>
+								</button>
+							</li>
+							<li>
+								<button type="button" id="myList" class="btn btn-light btn-block waves-effect waves-themed text-black shadow-none fw-700 pl-0 pr-0" title="저장 대화" data-action="toggle" data-class="d-none" data-target="#myList-container"><i class="fad fa-bookmark text-success fs-xl" data-template="&lt;div class=&quot;tooltip&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;tooltip-inner bg-primary text-white&quot;&gt;&lt;/div&gt;&lt;/div&gt;"  data-bs-custom-class="tooltip-lg" data-toggle="tooltip" title="" data-placement="right" data-original-title="저장 대화"></i></button>
+							</li>
+						</ul>
+					</nav>
+					<!-- END PRIMARY NAVIGATION -->
+
+					<!-- NAV FOOTER -->
+					<div class="nav-footer">
+						<div class="d-flex  pb-3 pt-2 mt-3  border-top-0 border-left-0 border-right-0 profile">
+							<div class="d-inline-block align-middle mr-3">
+								<span class="profile-image rounded-circle d-block" style="background-image:url('img/demo/avatars/avatar-admin.png'); background-size: cover;"></span>
+							</div>
+							<h5 class="mb-0 flex-1 fw-500 text-center">
+								AI 미래성장팀 / 홍길동
+								<small class="mt-1 l-h-n mb-2">KSPO-12345</small>
+							</h5>
+							<div>
+								<button type="button" class="btn btn-sm btn-light waves-effect waves-themed shadow-none"><i class="fad fa-cog"></i> 관리자</button>
+							</div>
+						</div>
+					</div> 
+
+					<div class="nav-footer-s">
+						<div class="d-flex flex-row pb-3 pt-2 mt-3  border-top-0 border-left-0 border-right-0 photo">
+							<div class="d-inline-block align-middle">
+								<span class="profile-image profile-image-md rounded-circle d-block" style="background-image:url('img/demo/avatars/avatar-admin.png'); background-size: cover;" data-template="&lt;div class=&quot;tooltip&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;tooltip-inner bg-primary text-white&quot;&gt;&lt;/div&gt;&lt;/div&gt;" data-toggle="tooltip" title="" data-placement="right" data-original-title="AI 미래성장팀 / 홍길동 / KSPO-12345"></span>
+							</div>
+						</div>
+						<div>
+							<button type="button" class="btn btn-sm btn-light waves-effect waves-themed shadow-none" data-template="&lt;div class=&quot;tooltip&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;tooltip-inner bg-primary text-white&quot;&gt;&lt;/div&gt;&lt;/div&gt;"  data-bs-custom-class="tooltip-lg" data-toggle="tooltip" title="" data-placement="right" data-original-title="관리자"><i class="fad fa-cog"></i></button>
+						</div>
+					</div>
+					<!-- END NAV FOOTER -->
+				</aside>
+
+				
+				<div id="newList-container" class="newList p-3 pt-5 bg-dark-100 d-none">
+					<div class="nav-title">
+						<i class="fad fa-alarm-clock text-success mr-1"></i>  대화 목록 <span><i class="fad fa-times fs-sm"  data-action="toggle" data-class="d-none" data-target="#newList-container"></i></span>
+					</div>
+					<ul>
+						<li><a href="#" title="">체육시설 안전점검 결과를 바로 볼 수 있도록 문저를 정리해줘</a><span class="hidden-button"><button class="btn btn-xs btn-light"><i class="fal fa-download" title="저장"></i></button> <button class="btn btn-xs btn-light" id="js-sweetalert2-example-8"><i class="fal fa-trash-alt" title="삭제"></i></button></span></li>
+						<li><a href="#" title="">체육시설 안전점검 결과를 바로 볼 수 있도록 문저를 정리해줘</a></li>
+						<li><a href="#" title="">체육시설 안전점검 결과를 바로 볼 수 있도록 문저를 정리해줘</a></li>
+						<li><a href="#" title="">체육시설 안전점검 결과를 바로 볼 수 있도록 문저를 정리해줘</a></li>
+						<li><a href="#" title="">체육시설 안전점검 결과를 바로 볼 수 있도록 문저를 정리해줘</a></li>
+						<li><a href="#" title="">체육시설 안전점검 결과를 바로 볼 수 있도록 문저를 정리해줘</a></li>
+						<li><a href="#" title="">체육시설 안전점검 결과를 바로 볼 수 있도록 문저를 정리해줘</a></li>
+						<li><a href="#" title="">체육시설 안전점검 결과를 바로 볼 수 있도록 문저를 정리해줘</a></li>
+						<li><a href="#" title="">체육시설 안전점검 결과를 바로 볼 수 있도록 문저를 정리해줘</a></li>
+						<li><a href="#" title="">체육시설 안전점검 결과를 바로 볼 수 있도록 문저를 정리해줘</a></li>
+						<li><a href="#" title="">체육시설 안전점검 결과를 바로 볼 수 있도록 문저를 정리해줘</a></li>
+					</ul>
+				</div>
+
+				<div id="myList-container" class="newList p-3 pt-5 bg-dark-100 d-none">
+					<div class="nav-title">
+						<i class="fad fa-bookmark text-success mr-1"></i> 저장 대화 <span class="text-right"><a href="my-page.html" class="mr-2"><i class="fad fa-plus fs-sm"></i></a> <i class="fad fa-times fs-sm"  data-action="toggle" data-class="d-none" data-target="#myList-container"></i></span>
+					</div>
+					<ul>
+						<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a><span class="hidden-button"><button class="btn btn-xs btn-light"><i class="fal fa-edit" title="제목변경"></i></button> <button class="btn btn-xs btn-light" id="js-sweetalert2-example-8"><i class="fal fa-trash-alt" title="삭제"></i></button></span></li>
+						<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+						<li><!-- 수정 모드일때 -->
+							<div class="input-group">
+								<input type="text" class="form-control form-control-sm" value="[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘" aria-describedby="button-addon5">
+								<div class="input-group-append">
+									<button class="btn btn-sm btn-primary waves-effect waves-themed shadow-none" type="button" id="button-addon5"><i class="fal fa-check" title="확인"></i></button>
+									<button class="btn btn-sm btn-light waves-effect waves-themed shadow-none" type="button" id="button-addon5"><i class="fal fa-times" title="취소"></i></button>
+								</div>
+							</div>
+						</li>
+						<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+						<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+						<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+						<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+						<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+						<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+						<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+						<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+						<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+					</ul>
+				</div>
+
+				<!-- END Left Aside -->
+				<div class="page-content-wrapper">
+					<main id="js-page-content" role="main" class="page-content">
+						<div class="row justify-content-between">
+							<div class="col-lg-3 col-md-6">
+								<div class="btn-group">
+									<button class="btn btn-light dropdown-toggle waves-effect waves-themed shadow-none" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<i class="fad fa-folder text-warning mr-1"></i> AI 비서
+									</button>
+									<div class="dropdown-menu" style="">
+										<a class="dropdown-item" href="main-agent-ai.html">Agent AI 비서</a>
+										<a class="dropdown-item" href="main-JobSpecial.html">업무특화 AI 비서</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 text-right">
+								<a href="my-ai.html" class="btn btn-light btn-icon rounded-circle waves-effect waves-themed shadow-none mr-1" data-template="&lt;div class=&quot;tooltip&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;tooltip-inner bg-primary text-white&quot;&gt;&lt;/div&gt;&lt;/div&gt;"  data-bs-custom-class="tooltip" data-toggle="tooltip" title="" data-placement="bottom" data-original-title="개인 AI 비서">
+									<i class="fad fa-robot text-primary"></i>
+								</a>
+								<a href="javascript:void(0);" class="btn btn-light btn-icon rounded-circle waves-effect waves-themed shadow-none" data-template="&lt;div class=&quot;tooltip&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;tooltip-inner bg-primary text-white&quot;&gt;&lt;/div&gt;&lt;/div&gt;"  data-bs-custom-class="tooltip" data-toggle="tooltip" title="" data-placement="bottom" data-original-title="글자크기 변경">
+									<i class="fad fa-text-size"></i>
+								</a>
+							</div>
+						</div>
+
+						<div class="row ml-0 mr-0">
+							<div class="col-xl-12">
+								<div id="panel-1" class="panel border-white shadow-none">
+									<!-- Start 모바일 메뉴 버튼 -->
+									<div class="m-nav-btn">
+										<a href="javascript:void(0);" class="header-btn btn js-waves-off shadow" data-toggle="modal" data-target=".mobile-left" title="모바일 메뉴 열기">
+											&nbsp;
+										</a>
+									</div>
+									<!-- // End 모바일 메뉴 버튼 -->
+									<!-- Start 모바일 메뉴 -->
+									<div class="modal fade mobile-left" tabindex="-1" role="dialog" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-left modal-lg">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title h4">
+														<img src="img/logo.svg" class="page-logo-text" alt="KSPO 사내 AI 플랫폼" aria-roledescription="logo">
+														<span class="page-logo-text mt-1">사내 AI 플랫폼</span>
+													</h5>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true"><i class="fad fa-times"></i></span>
+													</button>
+												</div>
+												<div class="modal-body">
+													<nav id="js-primary-nav" class="primary-nav" role="navigation">
+														<div>
+															<button type="button" class="btn btn-new btn-pills btn-block waves-effect waves-themed shadow-none fw-700 text-white" onclick="location.href='chat.html'"><i class="fad fa-plus mr-2"></i> 새 대화</button>
+														</div>
+														<div class=" border-bottom pb-3">
+															<div class="nav-title">
+																<i class="fad fa-alarm-clock text-primary mr-1"></i>  대화 목록
+															</div>
+															<div class="scroll_list_mobile"><!-- 더보기 버튼 클릭 시, scroll 활성화 -->
+																<ul id="js-nav-menu" class="nav-menu">
+																	<!-- 마우스 오버시 저장 및 삭제 버튼 활성화 -->
+																	<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a><span class="hidden-button"><button class="btn btn-xs btn-light"><i class="fal fa-download" title="저장"></i></button> <button class="btn btn-xs btn-light" id="js-sweetalert2-example-8"><i class="fal fa-trash-alt" title="삭제"></i></button></span></li>
+																	<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+																	<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+																	<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+																	<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+																	<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+																	<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+																	<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+																</ul>
+															</div>
+															<div><button type="button" class="btn btn-block btn-light waves-effect waves-themed shadow-none mt-2">더보기 <i class="fad fa-angle-down ml-2"></i></button></div>
+														</div>
+														<div class=" border-bottom pb-3">
+															<div class="nav-title">
+																<i class="fad fa-bookmark text-primary mr-1"></i> 저장 대화 <span><a href="my-page.html"><i class="fad fa-plus fs-sm"></i></a></span>
+															</div>
+															<div class="scroll_list_mobile">
+																<ul id="js-nav-menu" class="nav-menu">
+																	<!-- 마우스 오버시 수정(제목변경) 및 삭제 버튼 활성화 -->
+																	<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a><span class="hidden-button"><button class="btn btn-xs btn-light"><i class="fal fa-edit" title="제목변경"></i></button> <button class="btn btn-xs btn-light" id="js-sweetalert2-example-8"><i class="fal fa-trash-alt" title="삭제"></i></button></span></li>
+																	<li><!-- 수정 모드일때 -->
+																		<div class="input-group">
+																			<input type="text" class="form-control form-control-sm" value="[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘" aria-describedby="button-addon5">
+																			<div class="input-group-append">
+																				<button class="btn btn-sm btn-primary waves-effect waves-themed shadow-none" type="button" id="button-addon5"><i class="fal fa-check" title="확인"></i></button>
+																				<button class="btn btn-sm btn-light waves-effect waves-themed shadow-none" type="button" id="button-addon5"><i class="fal fa-times" title="취소"></i></button>
+																			</div>
+																		</div>
+																	</li>
+																	<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+																	<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+																	<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+																	<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+																</ul>
+															</div>
+															<div><button type="button" class="btn btn-block btn-light  waves-effect waves-themed shadow-none mt-2">더보기 <i class="fad fa-angle-down ml-2"></i></button></div>
+														</div>
+													</nav>
+												</div>
+												<div class="modal-footer">
+													<div class="d-flex flex-row pb-3 pt-2 mt-3  border-top-0 border-left-0 border-right-0">
+														<div class="d-inline-block align-middle mr-3">
+															<span class="profile-image rounded-circle d-block" style="background-image:url('img/demo/avatars/avatar-admin.png'); background-size: cover;"></span>
+														</div>
+														<h5 class="mb-0 flex-1 fw-500">
+															홍길동
+															<small class="m-0 l-h-n">
+																AI 미래성장팀 / 홍길동<br>
+																KSPO-12345
+															</small>
+														</h5>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- // End 모바일 메뉴 -->
+									
+									<div class="chatArea">
+										<div class="group-titleArea">
+											<div class="title">직원 본인뿐만 아니라 가족도 함께 이용할 수 있는 후생시설에는 어떤 것들이 있는지 알고 싶습니다.</div>
+											<div class="dateArea">
+												<span class="mr-2"><a href="#">📌</a></span>
+												<span class="mr-2"><a href="#">🗑️</a></span>
+												<span><a href="#">🖊️</a></span>
+											</div>
+										</div>
+										
+										<div class="scrollbar">
+											<div class="chat">
+												<div class="chat-Q">
+													<p>직원 본인뿐만 아니라 가족도 함께 이용할 수 있는 후생시설에는 어떤 것들이 있는지 알고 싶습니다.</p>
+												</div>
+
+												<div class="chat-A">
+													<div class="ai-info">
+														<span class="icon-ai btn-new"><img src="img/icon/icon-aiw.png"></span>
+														<p class="mb-0 ml-3">직원 본인뿐만 아니라 가족도 함께 이용할 수 있는 후생시설에는 어떤것들이 있는지 답변을 드릴께요.</p>
+													</div>
+													<div class="cardArea mt-2">
+														<div class="card p-3 shadow-none">
+															<blockquote class="blockquote mb-0 card-body shadow-none">
+																<h5 class="text-dark fw-700">⚡후생시설 및 복지프로그램 (직원ㆍ가족 이용가능)</h5>
+																<div style="width: 100%;overflow-x: auto;">
+																	<table class="tbListA">
+																	<caption>후생시설 및 복지프로그램 (직원 및 가족 이용가능)</caption>
+																		<colgroup>
+																			<col style="width:5%">
+																			<col style="width:15%">
+																			<col style="width:12%">
+																			<col style="width:12%">
+																			<col style="">
+																		</colgroup>
+
+																		<thead>
+																			<tr>
+																				<th scope="col">구분</th>
+																				<th scope="col">시설/프로그램명</th>
+																				<th scope="col">직원 이용대상</th>
+																				<th scope="col">가족 이용대상</th>
+																				<th scope="col">주요내용</th>
+																			</tr>
+																		</thead>
+
+																		<tbody class="alignC">
+																			<tr>
+																				<td>1</td>
+																				<td>체육시설 이용 지원</td>
+																				<td>직원 본인</td>
+																				<td>배우자, 자녀</td>
+																				<td class="text-left">공단이 운영하는 체육시설(예: 체육센터, 수영장, 체력단련장) 이용 할인 혹은 무료 지원</td>
+																			</tr>
+																			<tr>
+																				<td>2</td>
+																				<td>콘도/숙박시설 이용</td>
+																				<td>직원 본인</td>
+																				<td>가족</td>
+																				<td class="text-left">공단 계열 레저·숙박시설(올림픽파크텔 등) 이용 시 할인 혜택</td>
+																			</tr>
+																			<tr>
+																				<td>3</td>
+																				<td>건강검진 프로그램</td>
+																				<td>직원 본인</td>
+																				<td>배우자</td>
+																				<td class="text-left">정기 건강검진 제공 및 배우자 포함 선택 옵션</td>
+																			</tr>
+																			<tr>
+																				<td>4</td>
+																				<td>문화ㆍ교육 할인</td>
+																				<td>직원 본인</td>
+																				<td>가족</td>
+																				<td class="text-left">박물관ㆍ스포츠 행사ㆍ교육 강좌 할인 혜택</td>
+																			</tr>
+																			<tr>
+																				<td>5</td>
+																				<td>유아ㆍ육아 지원 서비스</td>
+																				<td>직원 본인</td>
+																				<td>자녀</td>
+																				<td class="text-left">휴직/육아휴직 안내 및 일부 시설 지원(교육·돌봄)</td>
+																			</tr>
+																			<tr>
+																				<td>6</td>
+																				<td>자산형성ㆍ보험 지원</td>
+																				<td>직원 본인</td>
+																				<td>가족</td>
+																				<td class="text-left">단체보험ㆍ생활안정지원 프로그램</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+
+																<p class="mt-3">
+																	국민체육진흥공단의 인사 복무 및 후생복지 제도에서는 공단이 운영하는 다양한 <strong class="fw-900 font-italic">체육시설과 숙박시설 활용, 건강검진 및 보험 지원, 문화·교육 관련 할인 프로그램 등</strong>을 통해 직원 본인은 물론 <strong class="fw-900 font-italic">배우자 및 자녀 등의 가족 구성원도 후생서비스를 이용할 수 있도록 지원</strong>하고 있습니다.이러한 제도는 직원의 일·생활 균형과 가족 복지 향상을 도모하기 위한 것으로, 관련 복지 항목 및 시설 이용 조건은 인사규정과 기관 복지 운영 지침에 따라 적용됩니다.
+																</p>
+																<p>
+																<strong class="fw-900 font-italic">요약하자면,</strong><br>
+																국민체육진흥공단은 직원 복지의 일환으로 공단 운영 체육시설 및 숙박시설 이용, 건강검진 및 가족 대상 서비스 등을 제공함으로써 <strong class="fw-900 font-italic">직원과 그 가족까지 후생복지를 누릴 수 있도록 다양한 프로그램을 운영</strong>합니다. 직원 가족의 경우도 일부 프로그램(예: 시설 이용, 건강·교육 할인 등)에 참여가 가능합니다.
+																</p>
+																<footer class="blockquote-footer">
+																	<div class="btn-pc">
+																		<button type="button" class="btn btn-outline-primary btn-sm waves-effect waves-themed shadow-none fw-700" data-action="toggle" data-class="d-none" data-target="#search-container">출처보기 (16)</button>
+																	</div>
+																	<div class="btn-mobile">
+																		<button type="button" class="btn btn-outline-primary btn-sm waves-effect waves-themed shadow-none fw-700" data-toggle="modal" data-target="#search-view">출처보기 (16)</button>
+																	</div>
+																	<div>
+																		<button type="button" class="btn waves-effect waves-themed text-black shadow-none fw-700 p-2" data-toggle="modal" data-target="#modal-good"><i class="fad fa-thumbs-up text-success"></i></button>
+																		<button type="button" class="btn waves-effect waves-themed text-black shadow-none fw-700 p-2" data-toggle="modal" data-target="#modal-bed"><i class="fad fa-thumbs-down text-success"></i></button>
+																		<button type="button" class="btn waves-effect waves-themed text-black shadow-none fw-700 p-2"><i class="fad fa-copy text-success"></i></button>
+																	</div>
+																</footer>
+															</blockquote>
+														</div>
+													</div>
+												</div>
+
+												<div class="recomArea mb-5">
+													<div class="row">
+														<div class="col-xl-3 col-md-6 mb-2">
+															<div class="card mb-g shadow-none h-100">
+																<div class="card-body">
+																	<p class="card-text">가족이 후생시설을 이용할 경우 이용 횟수나 연간 한도 제한이 있는지 알고 싶습니다.</p>
+																</div>
+															</div>
+														</div>
+														<div class="col-xl-3 col-md-6 mb-2">
+															<div class="card mb-g shadow-none h-100">
+																<div class="card-body">
+																	<p class="card-text">직원 가족이 후생시설을 이용하려면 사전에 등록하거나 제출해야하는 서류가 있는지 알려주세요.</p>
+																</div>
+															</div>
+														</div>
+														<div class="col-xl-3 col-md-6 mb-2">
+															<div class="card mb-g shadow-none h-100">
+																<div class="card-body">
+																	<p class="card-text">후생시설 중 배우자만 이용 가능한 시설과 자녀까지 이용 가능한 시설은 어떻게 구분되는지 설명해 주세요.</p>
+																</div>
+															</div>
+														</div>
+
+														<div class="col-xl-3 col-md-6 mb-2">
+															<div class="card mb-g shadow-none h-100">
+																<div class="card-body">
+																	<p class="card-text">후생시설 이용 시 비용이 전액 지원되는 항목과 일부 자부담이 필요한 항목에는 어떤 차이가 있는지 알고 싶습니다. </p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="d-flex justify-content-end align-items-center">
+													<span class="mr-3">2026-01-01 18:21</span>
+													<button type="button" class="btn btn-primary waves-effect waves-themed shadow-none" style="width:140px;" onclick="location.href='my-page.html' ">목록</button>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</main>
+				</div>
+
+				<div id="search-container" class="searchList p-3 d-none" style="background:#F6FCFE; border-left:1px solid #C4E8F8;">
+					<div class="nav-title">
+						<i class="fad fa-file-search text-primary mr-1"></i> 출처보기 <span style="font-size:14px;"><small>총 16건의 출처가 있습니다.</small></span>
+					</div>
+					
+					<div class="scrollbar" style="height:90vh; overflow-x:hidden;">
+						<div class="row p-2">
+							<div class="col-xl-12">
+								<div class="card mb-2 shadow-none active" data-toggle="modal" data-target="#source-view">
+									<div class="card-body">
+										<div class="d-flex justify-content-between mb-3">
+											<div class="d-flex align-items-center"><small class="text-dark"><span class="badge bg-primary-50 rounded-pill mr-1">1</span> 경영지원실 > 인사팀</small></div>
+										</div>
+										<h5 class="card-title mb-2">국민체육진흥공단 인사규정</h5>
+										<p class="card-text mb-1">본 규정은 직원의 복지 증진과 근무 의욕 향상을 위하여 후생시설의 설치·운영 및 이용에 관한 사항을 정함으로써, 쾌적한 근무...</p>
+										<div class="source pl-2">
+											<small class="text-dark"><i class="fad fa-archive text-warning mr-1"></i> 내부포털 > 규정관리 > 인사규정</small>
+										</div>
+									</div>
+								</div>
+								<div class="card mb-2 shadow-none">
+									<div class="card-body">
+										<div class="d-flex justify-content-between mb-3">
+											<div class="d-flex align-items-center"><small class="text-dark"><span class="badge bg-primary-50 rounded-pill mr-1">2</span> 경영지원실 > 인사팀</small></div>
+										</div>
+										<h5 class="card-title mb-2">국민체육진흥공단 복리후생 운영 지침</h5>
+										<p class="card-text mb-1">본 규정은 직원의 복지 증진과 근무 의욕 향상을 위하여 후생시설의 설치·운영 및 이용에 관한 사항을 정함으로써, 쾌적한 근무...</p>
+										<div class="source pl-2">
+											<small class="text-dark"><i class="fad fa-archive text-warning mr-1"></i> 내부포털 > 복지포털 > 운영지침</small>
+										</div>
+									</div>
+								</div>
+								<div class="card mb-2 shadow-none">
+									<div class="card-body">
+										<div class="d-flex justify-content-between mb-3">
+											<div class="d-flex align-items-center"><small class="text-dark"><span class="badge bg-primary-50 rounded-pill mr-1">3</span> 경영지원실 > 인사팀</small></div>
+										</div>
+										<h5 class="card-title mb-2">근로자복지시설 설치ㆍ운영에 관한 법률</h5>
+										<p class="card-text mb-1">본 규정은 직원의 복지 증진과 근무 의욕 향상을 위하여 후생시설의 설치·운영 및 이용에 관한 사항을 정함으로써, 쾌적한 근무...</p>
+										<div class="source pl-2">
+											<small class="text-dark"><i class="fad fa-archive text-warning mr-1"></i> 국가법령정보센터 > 법령</small>
+										</div>
+									</div>
+								</div>
+								<div class="card mb-2 shadow-none">
+									<div class="card-body">
+										<div class="d-flex justify-content-between mb-3">
+											<div class="d-flex align-items-center"><small class="text-dark"><span class="badge bg-primary-50 rounded-pill mr-1">4</span> 경영지원실 > 인사팀</small></div>
+										</div>
+										<h5 class="card-title mb-2">공공기관 인사관리 규정</h5>
+										<p class="card-text mb-1">본 규정은 직원의 복지 증진과 근무 의욕 향상을 위하여 후생시설의 설치·운영 및 이용에 관한 사항을 정함으로써, 쾌적한 근무...</p>
+										<div class="source pl-2">
+											<small class="text-dark"><i class="fad fa-archive text-warning mr-1"></i> 정부업무포털 > 지침ㆍ예규</small>
+										</div>
+									</div>
+								</div>
+								<div class="card mb-2 shadow-none">
+									<div class="card-body">
+										<div class="d-flex justify-content-between mb-3">
+											<div class="d-flex align-items-center"><small class="text-dark"><span class="badge bg-primary-50 rounded-pill mr-1">5</span> 경영지원실 > 인사팀</small></div>
+										</div>
+										<h5 class="card-title mb-2">국가공무원 복무 및 후생복지 규정</h5>
+										<p class="card-text mb-1">본 규정은 직원의 복지 증진과 근무 의욕 향상을 위하여 후생시설의 설치·운영 및 이용에 관한 사항을 정함으로써, 쾌적한 근무...</p>
+										<div class="source pl-2">
+											<small class="text-dark"><i class="fad fa-archive text-warning mr-1"></i> 내부포털 > 복지포털 > 운영지침</small>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- END Page Wrapper -->
+
+	<!--나의 저장 목록 관리 -->
+	<div class="modal fade" id="group-admin" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">저장 대화</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true"><i class="fad fa-times fs-sm"></i></span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="p-2">
+						<p class="fs-xl"><span class="text-success">Q.</span> AI의 청정평수는 어떻게 되나요? 질문의 길이가 얼마나 길어지나요?</p>
+						<div class="mt-2">
+							<div class="input-group">
+								<input type="text" class="form-control form-control-sm" placeholder="새 그룹명을 입력하세요." aria-label="새 그룹명을 입력하세요." aria-describedby="button-addon5">
+								<div class="input-group-append">
+									<button class="btn btn-sm btn-success waves-effect waves-themed shadow-none" type="button" id="button-addon5">추가</button>
+								</div>
+							</div>
+							<p class="mt-3"><i class="fal fa-exclamation-triangle"></i> 관련 그룹/분류를 선택하여 저장/관리하세요.</p>
+							<div class="group-box">
+								<!--  카테고리가 없는 경우 -->
+								<div class="text-center">
+									<p class="mb-0">저장된 그룹이 없습니다.</p>
+									<p class="mb-0 text-warning">그룹을 추가하여 선택하세요. 중복 그룹 선택 가능합니다.</p>
+								</div>
+
+								<!-- 카테고리가 있는 경우 -->
+								<!--div class="frame-wrap">
+									<div class="custom-control custom-checkbox custom-control-inline">
+										<input type="checkbox" class="custom-control-input" id="defaultInline1">
+										<label class="custom-control-label" for="defaultInline1">카테고리 1</label>
+									</div>
+									<div class="custom-control custom-checkbox custom-control-inline">
+										<input type="checkbox" class="custom-control-input" id="defaultInline2">
+										<label class="custom-control-label" for="defaultInline2">카테고리 2</label>
+									</div>
+									<div class="custom-control custom-checkbox custom-control-inline">
+										<input type="checkbox" class="custom-control-input" id="defaultInlined">
+										<label class="custom-control-label" for="defaultInlined">카테고리 3</label>
+									</div>
+								</div-->
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer bg-primary">
+					<div class="row w-100 p-0 m-0">
+						<div class="col-6 text-center border-right border-light">
+							<button type="button" class="btn btn-block shadow-none fw-700 text-white">저장</button>
+						</div>
+						<div class="col-6 text-center">
+							<button type="button" class="btn btn-block shadow-none fw-700 text-white" data-dismiss="modal" aria-label="Close">취소</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 모바일 출처 보기 -->
+	<div class="modal fade" id="search-view" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-right" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+
+					<div class="nav-title">
+						<i class="fad fa-file-search text-primary mr-1"></i> 출처보기 <span style="font-size:14px;"><small>총 16건의 출처가 있습니다.</small></span>
+					</div>
+					
+					<div class="scrollbar" style="height:90vh; overflow-x:hidden;">
+						<div class="row p-2">
+							<div class="col-xl-12">
+								<div class="card mb-2 shadow-none active" data-toggle="modal" data-target="#source-view">
+									<div class="card-body">
+										<div class="d-flex justify-content-between mb-3">
+											<div class="d-flex align-items-center"><small class="text-dark"><span class="badge bg-primary-50 rounded-pill mr-1">1</span> 경영지원실 > 인사팀</small></div>
+										</div>
+										<h5 class="card-title mb-2">국민체육진흥공단 인사규정</h5>
+										<p class="card-text mb-1">본 규정은 직원의 복지 증진과 근무 의욕 향상을 위하여 후생시설의 설치·운영 및 이용에 관한 사항을 정함으로써, 쾌적한 근무...</p>
+										<div class="source pl-2">
+											<small class="text-dark"><i class="fad fa-archive text-warning mr-1"></i> 내부포털 > 규정관리 > 인사규정</small>
+										</div>
+									</div>
+								</div>
+								<div class="card mb-2 shadow-none">
+									<div class="card-body">
+										<div class="d-flex justify-content-between mb-3">
+											<div class="d-flex align-items-center"><small class="text-dark"><span class="badge bg-primary-50 rounded-pill mr-1">2</span> 경영지원실 > 인사팀</small></div>
+										</div>
+										<h5 class="card-title mb-2">국민체육진흥공단 복리후생 운영 지침</h5>
+										<p class="card-text mb-1">본 규정은 직원의 복지 증진과 근무 의욕 향상을 위하여 후생시설의 설치·운영 및 이용에 관한 사항을 정함으로써, 쾌적한 근무...</p>
+										<div class="source pl-2">
+											<small class="text-dark"><i class="fad fa-archive text-warning mr-1"></i> 내부포털 > 복지포털 > 운영지침</small>
+										</div>
+									</div>
+								</div>
+								<div class="card mb-2 shadow-none">
+									<div class="card-body">
+										<div class="d-flex justify-content-between mb-3">
+											<div class="d-flex align-items-center"><small class="text-dark"><span class="badge bg-primary-50 rounded-pill mr-1">3</span> 경영지원실 > 인사팀</small></div>
+										</div>
+										<h5 class="card-title mb-2">근로자복지시설 설치ㆍ운영에 관한 법률</h5>
+										<p class="card-text mb-1">본 규정은 직원의 복지 증진과 근무 의욕 향상을 위하여 후생시설의 설치·운영 및 이용에 관한 사항을 정함으로써, 쾌적한 근무...</p>
+										<div class="source pl-2">
+											<small class="text-dark"><i class="fad fa-archive text-warning mr-1"></i> 국가법령정보센터 > 법령</small>
+										</div>
+									</div>
+								</div>
+								<div class="card mb-2 shadow-none">
+									<div class="card-body">
+										<div class="d-flex justify-content-between mb-3">
+											<div class="d-flex align-items-center"><small class="text-dark"><span class="badge bg-primary-50 rounded-pill mr-1">4</span> 경영지원실 > 인사팀</small></div>
+										</div>
+										<h5 class="card-title mb-2">공공기관 인사관리 규정</h5>
+										<p class="card-text mb-1">본 규정은 직원의 복지 증진과 근무 의욕 향상을 위하여 후생시설의 설치·운영 및 이용에 관한 사항을 정함으로써, 쾌적한 근무...</p>
+										<div class="source pl-2">
+											<small class="text-dark"><i class="fad fa-archive text-warning mr-1"></i> 정부업무포털 > 지침ㆍ예규</small>
+										</div>
+									</div>
+								</div>
+								<div class="card mb-2 shadow-none">
+									<div class="card-body">
+										<div class="d-flex justify-content-between mb-3">
+											<div class="d-flex align-items-center"><small class="text-dark"><span class="badge bg-primary-50 rounded-pill mr-1">5</span> 경영지원실 > 인사팀</small></div>
+										</div>
+										<h5 class="card-title mb-2">국가공무원 복무 및 후생복지 규정</h5>
+										<p class="card-text mb-1">본 규정은 직원의 복지 증진과 근무 의욕 향상을 위하여 후생시설의 설치·운영 및 이용에 관한 사항을 정함으로써, 쾌적한 근무...</p>
+										<div class="source pl-2">
+											<small class="text-dark"><i class="fad fa-archive text-warning mr-1"></i> 내부포털 > 복지포털 > 운영지침</small>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- 좋아요  -->
+<div class="modal fade" id="modal-good" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<h6 class="modal-title fw-700">평가한 이유를 알려주시면 서비스 품질개선에 도움이 됩니다. (선택사항)</h6>
+				<div class="mt-3">
+					<button type="button" class="btn btn-sm btn-outline-info waves-effect waves-themed shadow-none mr-1 mb-2">정확한 정보제공</button>
+					<button type="button" class="btn btn-sm btn-outline-info waves-effect waves-themed shadow-none mr-1 mb-2">편리하고 이해하기 쉬움</button>
+					<button type="button" class="btn btn-sm btn-info waves-effect waves-themed shadow-none fw-700 mr-1 mb-2"><i class="fal fa-check mr-1"></i> 만족도 상승</button>
+				</div>
+				<div class="mt-3">
+					<textarea class="form-control" id="example-textarea" rows="5">추가의견을 남겨주세요.</textarea>
+				</div>
+			</div>
+
+			<div class="modal-footer justify-content-center pt-0">
+				<button type="button" class="btn btn-primary shadow-none fw-700">피드백 제출</button>
+				<button type="button" class="btn btn-default shadow-none fw-700" data-dismiss="modal" aria-label="Close">취소</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 나빠요  -->
+<div class="modal fade" id="modal-bed" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<h6 class="modal-title fw-700">평가한 이유를 알려주시면 서비스 품질개선에 도움이 됩니다. (선택사항)</h6>
+				<div class="mt-3">
+					<button type="button" class="btn btn-sm btn-outline-danger waves-effect waves-themed shadow-none mr-1 mb-2">부정확한 정보제공</button>
+					<button type="button" class="btn btn-sm btn-outline-danger waves-effect waves-themed shadow-none mr-1 mb-2">이해하기 어려움</button>
+					<button type="button" class="btn btn-sm btn-danger waves-effect waves-themed shadow-none fw-700 mr-1 mb-2"><i class="fal fa-check mr-1"></i> 사실과 다름</button>
+				</div>
+				<div class="mt-3">
+					<textarea class="form-control" id="example-textarea" rows="5">추가의견을 남겨주세요.</textarea>
+				</div>
+			</div>
+
+			<div class="modal-footer justify-content-center pt-0">
+				<button type="button" class="btn btn-danger shadow-none fw-700">피드백 제출</button>
+				<button type="button" class="btn btn-default shadow-none fw-700" data-dismiss="modal" aria-label="Close">취소</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<!-- 출처 상세보기  -->
+	<div class="modal fade show" id="source-view" tabindex="-1" role="dialog" aria-modal="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header btn-new">
+					<h5 class="modal-title text-white fw-700">국민체육진흥공단 인사규정 <small class="mb-0">경영지원팀 > 인사팀</small></h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true"><i class="fad fa-times text-white"></i></span>
+					</button>
+				</div>
+
+				<div class="modal-body ">
+					<div class="mb-4">
+						<h5 class="fw-700">후생복지 제도의 목적</h5>
+						<p class="fw-400">본 규정은 직원의 복지 증진과 근무 의욕 향상을 위하여 후생시설의 설치ㆍ운영 및 복리후생 제도의 기본 사항을 정함을 목적으로 한다.</p>
+					</div>
+
+					<div class="mb-4">
+						<h5 class="fw-700">제도의 취지 및 필요성</h5>
+						<p class="fw-400">후생복지 제도는 직원의 신체적 정신적 건강을 증진하고, 일과 생활의 균형을 지원함으로써 업무 효율성과 조직의 지속가능한 발전에 기여하는 것을 취지로 한다. 이를 통해 직원 개인의 삶의 질 향상과 더불어 공단의 공공적 책무 수행 역량을 강화하고자 한다.</p>
+					</div>
+				</div>
+
+				<div class="modal-footer justify-content-center pt-0">
+					<button type="button" class="btn btn-primary waves-effect waves-themed shadow-none" data-dismiss="modal">문서 다운로드</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/vendors.bundle.js"></script>
+	<script src="js/app.bundle.js"></script>
+
+	<script src="js/formplugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<script>
+
+		$(document).ready(function () {
+
+			$('.scroll_list').slimscroll({
+				height: '166px'
+			})
+
+			$('.scroll_list_mobile').slimscroll({
+				height: '124px'
+			})
+
+		});
+
+	</script>
+
+
+	<script src="js/notifications/sweetalert2/sweetalert2.bundle.js"></script>
+		<script>
+			var classHolder = document.querySelector('body'); 
+			
+			$(document).ready(function()
+			{
+				"use strict";
+				$("#js-sweetalert2-example-8").on("click", function()
+				{
+					var swalWithBootstrapButtons = Swal.mixin(
+					{
+						customClass:
+						{
+							confirmButton: "btn btn-primary",
+							cancelButton: "btn btn-danger mr-2"
+						},
+						buttonsStyling: false
+					});
+					swalWithBootstrapButtons
+						.fire(
+						{
+							title: "정말 삭제하시겠습니까?",
+							text: "삭제한 정보는 복구가 불가합니다.",
+							type: "warning",
+							showCancelButton: true,
+							confirmButtonText: "예",
+							cancelButtonText: "아니오",
+							reverseButtons: true
+						})
+						.then(function(result)
+						{
+							if (result.value)
+							{
+								swalWithBootstrapButtons.fire(
+									"삭제 완료",
+									"선택한 정보가 삭제되었습니다.",
+									"success"
+								);
+							}
+							else if (
+								// Read more about handling dismissals
+								result.dismiss === Swal.DismissReason.cancel
+							)
+							{
+								swalWithBootstrapButtons.fire(
+									"삭제 취소",
+									"삭제가 취소되었습니다.",
+									"error"
+								);
+							}
+						});
+				}); // A message with a custom image and CSS animation disabled
+				
+				document.getElementById('sideMain').addEventListener('click', function () {
+					
+					const newListContainer = document.getElementById('newList-container');
+					const myListContainer = document.getElementById('myList-container');
+
+					// newList, myList는 무조건 닫기
+					myListContainer.classList.add('d-none');
+					newListContainer.classList.add('d-none');
+				});
+				
+				document.getElementById('newList').addEventListener('click', function () {
+					
+					const newListContainer = document.getElementById('newList-container');
+					const myListContainer = document.getElementById('myList-container');
+
+					// myList는 무조건 닫기
+					myListContainer.classList.add('d-none');
+				});
+
+				document.getElementById('myList').addEventListener('click', function () {
+					
+					const newListContainer = document.getElementById('newList-container');
+					const myListContainer = document.getElementById('myList-container');
+
+					// newList는 무조건 닫기
+					newListContainer.classList.add('d-none');
+				});
+			});
+		</script>
+<script>
+  const bannedWords = ['금지어', '이름', '주민등록번호'];
+  const input = document.getElementById('textInput');
+  const warning = document.getElementById('warningLayer');
+
+  input.addEventListener('input', function () {
+    const value = input.value.toLowerCase();
+
+    const hasBannedWord = bannedWords.some(word =>
+      value.includes(word.toLowerCase())
+    );
+
+    if (hasBannedWord) {
+      warning.classList.add('show');
+    } else {
+      warning.classList.remove('show');
+    }
+  });
+</script>
+
+	</body>
+</html>

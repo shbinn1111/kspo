@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>KSPO 국민체육진흥공단 - 사내 AI 비서</title>
+		<meta name="description" content="Page Title">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, minimal-ui">
+		<!-- Call App Mode on ios devices -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<!-- Remove Tap Highlight on Windows Phone IE -->
+		<meta name="msapplication-tap-highlight" content="no">
+		<!-- base css -->
+		<link rel="stylesheet" media="screen, print" href="css/vendors.bundle.css">
+		<link rel="stylesheet" media="screen, print" href="css/app.bundle.css">
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+		<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+
+		<link rel="stylesheet" media="screen, print" href="css/notifications/sweetalert2/sweetalert2.bundle.css">
+
+		<link rel="stylesheet" media="screen, print" href="css/fa-duotone.css">
+
+		<link rel="stylesheet" media="screen, print" href="css/custom_saltlux.css">
+		
+	</head>
+	<body class="namux-bg mod-nav-link">
+		<!-- BEGIN Page Wrapper -->
+		<div class="page-wrapper">
+			<div class="page-inner">
+				<div class="leftBar">
+					<img src="img/left-logo.png">
+				</div>
+				<!-- BEGIN Left Aside -->
+				<aside class="page-sidebar">
+					<div class="page-logo">
+						<a href="#" class="page-logo-link press-scale-down position-relative text-dark">
+							<img src="img/logo.svg" class="page-logo-text" alt="KSPO 사내 AI 플랫폼" aria-roledescription="logo">
+							<span class="page-logo-text mt-1">사내 AI 플랫폼</span>
+						</a>
+					</div>
+					<div id="sideMain" class="panel-nav-btn btn-pc">
+						<a href="javascript:void(0);" class="header-btn btn js-waves-off shadow-sm" data-action="toggle" data-class="nav-function-minify" title="메뉴접기/펼치기">
+							&nbsp;
+						</a>
+					</div>
+					<!-- BEGIN PRIMARY NAVIGATION -->
+					<nav id="js-primary-nav" class="primary-nav" role="navigation">
+						<div class="nav-menu-full">
+							<div class="mt-3">
+								<button type="button" class="btn btn-new btn-pills btn-sm btn-block waves-effect waves-themed text-white shadow-none fw-700" onclick="location.href='chat.html'"><i class="fad fa-plus mr-2"></i> 새 대화</button>
+							</div>
+							<div class=" border-bottom border-default pb-3">
+								<div class="nav-title">
+									<i class="fad fa-alarm-clock text-success mr-2"></i>  대화 목록
+								</div>
+								<div class="scroll_list"><!-- 더보기 버튼 클릭 시, scroll 활성화 -->
+									<ul id="js-nav-menu" class="nav-menu">
+										<!-- 마우스 오버시 저장 및 삭제 버튼 활성화 -->
+										<li><a href="chat.html'" title="">체육시설 안전점검 결과를 바로 볼 수 있도록</a><span class="hidden-button"><button class="btn btn-xs btn-light" data-toggle="modal" data-target="#group-admin"><i class="fal fa-download" title="저장"></i></button> <button class="btn btn-xs btn-light" id="js-sweetalert2-example-8"><i class="fal fa-trash-alt" title="삭제"></i></button></span></li>
+										<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을</a></li>
+										<li><a href="#" title="">문서 내 주요 키워드를 자동 추출해줘</a></li>
+										<li><a href="#" title="">[업무특화] 전 직원 대상 청렴주간 행사를 위한</a></li>
+										<li><a href="#" title="">직원이 겸직 허가를 받은 경우, 허가 범위가 어떻게</a></li>
+										<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을</a></li>
+										<li><a href="#" title="">문서 내 주요 키워드를 자동 추출해줘</a></li>
+										<li><a href="#" title="">[업무특화] 전 직원 대상 청렴주간 행사를 위한</a></li>
+										<li><a href="#" title="">직원이 겸직 허가를 받은 경우, 허가 범위가 어떻게</a></li>
+									</ul>
+								</div>
+								<div><button type="button" class="btn btn-block btn-light waves-effect waves-themed shadow-none mt-2">더보기 <i class="fad fa-angle-down ml-2"></i></button></div>
+							</div>
+							<div class=" border-bottom border-default pb-3">
+								<div class="nav-title">
+									<i class="fad fa-bookmark text-success mr-1"></i> 저장 대화 <span><a href="my-page.html"><i class="fad fa-plus fs-sm"></i></a></span>
+								</div>
+								<div class="scroll_list">
+									<ul id="js-nav-menu" class="nav-menu">
+										<!-- 마우스 오버시 수정(제목변경) 및 삭제 버튼 활성화 -->
+										<li><a href="#" title="">📌 체육시설 안전점검 결과를 바로 볼 수 있도록</a><span class="hidden-button"><button class="btn btn-xs btn-light"><i class="fal fa-edit" title="제목변경"></i></button> <button class="btn btn-xs btn-light" id="js-sweetalert2-example-8"><i class="fal fa-trash-alt" title="삭제"></i></button></span></li>
+										<li><a href="#" title="">📌 문서 내 주요 키워드를 자동 추출해줘</a></li>
+										<li><!-- 수정 모드일때 -->
+											<div class="input-group">
+												<input type="text" class="form-control form-control-sm" value="[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을" aria-describedby="button-addon5">
+												<div class="input-group-append">
+													<button class="btn btn-sm btn-primary waves-effect waves-themed shadow-none text-dark" type="button" id="button-addon5"><i class="fal fa-check text-white" title="확인"></i></button>
+													<button class="btn btn-sm btn-light waves-effect waves-themed shadow-none" type="button" id="button-addon5"><i class="fal fa-times" title="취소"></i></button>
+												</div>
+											</div>
+										</li>
+										<li><a href="#" title="">[업무특화] 전 직원 대상 청렴주간 행사를 위한</a></li>
+										<li><a href="#" title="">직원이 겸직 허가를 받은 경우, 허가 범위가 어떻게</a></li>
+										<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을</a></li>
+									</ul>
+								</div>
+								<div><button type="button" class="btn btn-block btn-light waves-effect waves-themed shadow-none mt-2">더보기 <i class="fad fa-angle-down ml-2"></i></button></div>
+							</div>
+						</div>
+
+						<!-- 좌측 패널 접힘 상태 -->
+						<ul class="nav-menu-s mt-3">
+							<li>
+								<button type="button" id="mainList" class="btn btn-new btn-block waves-effect waves-themed text-black shadow-none fw-700" title="새 대화" onclick="location.href='chat.html'"><i class="fad fa-plus text-white" data-template="&lt;div class=&quot;tooltip&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;tooltip-inner bg-primary text-white&quot;&gt;&lt;/div&gt;&lt;/div&gt;" data-toggle="tooltip" title="" data-placement="right" data-original-title="새 대화"></i></button>
+							</li>
+							<li>
+								<button type="button" id="newList" class="btn btn-light btn-block waves-effect waves-themed text-black shadow-none fw-700 pl-0 pr-0" title="대화 목록"  data-action="toggle" data-class="d-none" data-target="#newList-container"><i class="fad fa-alarm-clock text-success fs-xl" data-template="&lt;div class=&quot;tooltip&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;tooltip-inner bg-primary text-white&quot;&gt;&lt;/div&gt;&lt;/div&gt;" data-toggle="tooltip" title="" data-placement="right" data-original-title="대화 목록"></i>
+								</button>
+							</li>
+							<li>
+								<button type="button" id="myList" class="btn btn-light btn-block waves-effect waves-themed text-black shadow-none fw-700 pl-0 pr-0" title="저장 대화" data-action="toggle" data-class="d-none" data-target="#myList-container"><i class="fad fa-bookmark text-success fs-xl" data-template="&lt;div class=&quot;tooltip&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;tooltip-inner bg-primary text-white&quot;&gt;&lt;/div&gt;&lt;/div&gt;"  data-bs-custom-class="tooltip-lg" data-toggle="tooltip" title="" data-placement="right" data-original-title="저장 대화"></i></button>
+							</li>
+						</ul>
+					</nav>
+					<!-- END PRIMARY NAVIGATION -->
+
+					<!-- NAV FOOTER -->
+					<div class="nav-footer">
+						<div class="d-flex  pb-3 pt-2 mt-3  border-top-0 border-left-0 border-right-0 profile">
+							<div class="d-inline-block align-middle mr-3">
+								<span class="profile-image rounded-circle d-block" style="background-image:url('img/demo/avatars/avatar-admin.png'); background-size: cover;"></span>
+							</div>
+							<h5 class="mb-0 flex-1 fw-500 text-center">
+								AI 미래성장팀 / 홍길동
+								<small class="mt-1 l-h-n mb-2">KSPO-12345</small>
+							</h5>
+							<div>
+								<button type="button" class="btn btn-sm btn-light waves-effect waves-themed shadow-none"><i class="fad fa-cog"></i> 관리자</button>
+							</div>
+						</div>
+					</div> 
+
+					<div class="nav-footer-s">
+						<div class="d-flex flex-row pb-3 pt-2 mt-3  border-top-0 border-left-0 border-right-0 photo">
+							<div class="d-inline-block align-middle">
+								<span class="profile-image profile-image-md rounded-circle d-block" style="background-image:url('img/demo/avatars/avatar-admin.png'); background-size: cover;" data-template="&lt;div class=&quot;tooltip&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;tooltip-inner bg-primary text-white&quot;&gt;&lt;/div&gt;&lt;/div&gt;" data-toggle="tooltip" title="" data-placement="right" data-original-title="AI 미래성장팀 / 홍길동 / KSPO-12345"></span>
+							</div>
+						</div>
+						<div>
+							<button type="button" class="btn btn-sm btn-light waves-effect waves-themed shadow-none" data-template="&lt;div class=&quot;tooltip&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;tooltip-inner bg-primary text-white&quot;&gt;&lt;/div&gt;&lt;/div&gt;"  data-bs-custom-class="tooltip-lg" data-toggle="tooltip" title="" data-placement="right" data-original-title="관리자"><i class="fad fa-cog"></i></button>
+						</div>
+					</div>
+					<!-- END NAV FOOTER -->
+				</aside>
+
+				
+				<div id="newList-container" class="newList p-3 pt-5 bg-dark-100 d-none">
+					<div class="nav-title">
+						<i class="fad fa-alarm-clock text-success mr-1"></i>  대화 목록 <span><i class="fad fa-times fs-sm"  data-action="toggle" data-class="d-none" data-target="#newList-container"></i></span>
+					</div>
+					<ul>
+						<li><a href="#" title="">체육시설 안전점검 결과를 바로 볼 수 있도록 문저를 정리해줘</a><span class="hidden-button"><button class="btn btn-xs btn-light"><i class="fal fa-download" title="저장"></i></button> <button class="btn btn-xs btn-light" id="js-sweetalert2-example-8"><i class="fal fa-trash-alt" title="삭제"></i></button></span></li>
+						<li><a href="#" title="">체육시설 안전점검 결과를 바로 볼 수 있도록 문저를 정리해줘</a></li>
+						<li><a href="#" title="">체육시설 안전점검 결과를 바로 볼 수 있도록 문저를 정리해줘</a></li>
+						<li><a href="#" title="">체육시설 안전점검 결과를 바로 볼 수 있도록 문저를 정리해줘</a></li>
+						<li><a href="#" title="">체육시설 안전점검 결과를 바로 볼 수 있도록 문저를 정리해줘</a></li>
+						<li><a href="#" title="">체육시설 안전점검 결과를 바로 볼 수 있도록 문저를 정리해줘</a></li>
+						<li><a href="#" title="">체육시설 안전점검 결과를 바로 볼 수 있도록 문저를 정리해줘</a></li>
+						<li><a href="#" title="">체육시설 안전점검 결과를 바로 볼 수 있도록 문저를 정리해줘</a></li>
+						<li><a href="#" title="">체육시설 안전점검 결과를 바로 볼 수 있도록 문저를 정리해줘</a></li>
+						<li><a href="#" title="">체육시설 안전점검 결과를 바로 볼 수 있도록 문저를 정리해줘</a></li>
+						<li><a href="#" title="">체육시설 안전점검 결과를 바로 볼 수 있도록 문저를 정리해줘</a></li>
+					</ul>
+				</div>
+
+				<div id="myList-container" class="newList p-3 pt-5 bg-dark-100 d-none">
+					<div class="nav-title">
+						<i class="fad fa-bookmark text-success mr-1"></i> 저장 대화 <span class="text-right"><a href="my-page.html" class="mr-2"><i class="fad fa-plus fs-sm"></i></a> <i class="fad fa-times fs-sm"  data-action="toggle" data-class="d-none" data-target="#myList-container"></i></span>
+					</div>
+					<ul>
+						<li><a href="#" title="">📌 [Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a><span class="hidden-button"><button class="btn btn-xs btn-light"><i class="fal fa-edit" title="제목변경"></i></button> <button class="btn btn-xs btn-light" id="js-sweetalert2-example-8"><i class="fal fa-trash-alt" title="삭제"></i></button></span></li>
+						<li><a href="#" title="">📌 [Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+						<li><!-- 수정 모드일때 -->
+							<div class="input-group">
+								<input type="text" class="form-control form-control-sm" value="[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘" aria-describedby="button-addon5">
+								<div class="input-group-append">
+									<button class="btn btn-sm btn-primary waves-effect waves-themed shadow-none" type="button" id="button-addon5"><i class="fal fa-check" title="확인"></i></button>
+									<button class="btn btn-sm btn-light waves-effect waves-themed shadow-none" type="button" id="button-addon5"><i class="fal fa-times" title="취소"></i></button>
+								</div>
+							</div>
+						</li>
+						<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+						<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+						<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+						<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+						<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+						<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+						<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+						<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+						<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+					</ul>
+				</div>
+
+				<!-- END Left Aside -->
+				<div class="page-content-wrapper">
+					<main id="js-page-content" role="main" class="page-content">
+						<div class="row justify-content-between">
+							<div class="col-lg-3 col-md-6">
+								<div class="btn-group">
+									<button class="btn btn-light dropdown-toggle waves-effect waves-themed shadow-none" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<i class="fad fa-folder text-warning mr-1"></i> AI 비서
+									</button>
+									<div class="dropdown-menu" style="">
+										<a class="dropdown-item" href="main-agent-ai.html">Agent AI 비서</a>
+										<a class="dropdown-item" href="main-JobSpecial.html">업무특화 AI 비서</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 text-right">
+								<a href="my-ai.html" class="btn btn-light btn-icon rounded-circle waves-effect waves-themed shadow-none mr-1" data-template="&lt;div class=&quot;tooltip&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;tooltip-inner bg-primary text-white&quot;&gt;&lt;/div&gt;&lt;/div&gt;"  data-bs-custom-class="tooltip" data-toggle="tooltip" title="" data-placement="bottom" data-original-title="개인 AI 비서">
+									<i class="fad fa-robot text-primary"></i>
+								</a>
+								<a href="javascript:void(0);" class="btn btn-light btn-icon rounded-circle waves-effect waves-themed shadow-none" data-template="&lt;div class=&quot;tooltip&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;tooltip-inner bg-primary text-white&quot;&gt;&lt;/div&gt;&lt;/div&gt;"  data-bs-custom-class="tooltip" data-toggle="tooltip" title="" data-placement="bottom" data-original-title="글자크기 변경">
+									<i class="fad fa-text-size"></i>
+								</a>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xl-12">
+								<div id="panel-1" class="panel border-white shadow-none">
+									<!-- Start 모바일 메뉴 버튼 -->
+									<div class="m-nav-btn">
+										<a href="javascript:void(0);" class="header-btn btn js-waves-off shadow" data-toggle="modal" data-target=".mobile-left" title="모바일 메뉴 열기">
+											&nbsp;
+										</a>
+									</div>
+									<!-- // End 모바일 메뉴 버튼 -->
+									<!-- Start 모바일 메뉴 -->
+									<div class="modal fade mobile-left" tabindex="-1" role="dialog" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-left modal-lg">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title h4">
+														<img src="img/logo.svg" class="page-logo-text" alt="KSPO 사내 AI 플랫폼" aria-roledescription="logo">
+														<span class="page-logo-text mt-1">사내 AI 플랫폼</span>
+													</h5>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true"><i class="fad fa-times"></i></span>
+													</button>
+												</div>
+												<div class="modal-body">
+													<nav id="js-primary-nav" class="primary-nav" role="navigation">
+														<div>
+															<button type="button" class="btn btn-new btn-pills btn-block waves-effect waves-themed shadow-none fw-700 text-white" onclick="location.href='chat.html'"><i class="fad fa-plus mr-2"></i> 새 대화</button>
+														</div>
+														<div class=" border-bottom pb-3">
+															<div class="nav-title">
+																<i class="fad fa-alarm-clock text-primary mr-1"></i>  대화 목록
+															</div>
+															<div class="scroll_list_mobile"><!-- 더보기 버튼 클릭 시, scroll 활성화 -->
+																<ul id="js-nav-menu" class="nav-menu">
+																	<!-- 마우스 오버시 저장 및 삭제 버튼 활성화 -->
+																	<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a><span class="hidden-button"><button class="btn btn-xs btn-light"><i class="fal fa-download" title="저장"></i></button> <button class="btn btn-xs btn-light" id="js-sweetalert2-example-8"><i class="fal fa-trash-alt" title="삭제"></i></button></span></li>
+																	<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+																	<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+																	<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+																	<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+																	<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+																	<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+																	<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+																</ul>
+															</div>
+															<div><button type="button" class="btn btn-block btn-light waves-effect waves-themed shadow-none mt-2">더보기 <i class="fad fa-angle-down ml-2"></i></button></div>
+														</div>
+														<div class=" border-bottom pb-3">
+															<div class="nav-title">
+																<i class="fad fa-bookmark text-primary mr-1"></i> 저장 대화 <span><a href="my-page.html"><i class="fad fa-plus fs-sm"></i></a></span>
+															</div>
+															<div class="scroll_list_mobile">
+																<ul id="js-nav-menu" class="nav-menu">
+																	<!-- 마우스 오버시 수정(제목변경) 및 삭제 버튼 활성화 -->
+																	<li><a href="#" title="">📌 [Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a><span class="hidden-button"><button class="btn btn-xs btn-light"><i class="fal fa-edit" title="제목변경"></i></button> <button class="btn btn-xs btn-light" id="js-sweetalert2-example-8"><i class="fal fa-trash-alt" title="삭제"></i></button></span></li>
+																	<li><a href="#" title="">📌 [Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+																	<li><!-- 수정 모드일때 -->
+																		<div class="input-group">
+																			<input type="text" class="form-control form-control-sm" value="[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘" aria-describedby="button-addon5">
+																			<div class="input-group-append">
+																				<button class="btn btn-sm btn-primary waves-effect waves-themed shadow-none" type="button" id="button-addon5"><i class="fal fa-check" title="확인"></i></button>
+																				<button class="btn btn-sm btn-light waves-effect waves-themed shadow-none" type="button" id="button-addon5"><i class="fal fa-times" title="취소"></i></button>
+																			</div>
+																		</div>
+																	</li>
+																	<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+																	<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+																	<li><a href="#" title="">[Agent] 다음 주 감사 일정 안내를 위한 문서 초안을 작성해줘</a></li>
+																</ul>
+															</div>
+															<div><button type="button" class="btn btn-block btn-light  waves-effect waves-themed shadow-none mt-2">더보기 <i class="fad fa-angle-down ml-2"></i></button></div>
+														</div>
+													</nav>
+												</div>
+												<div class="modal-footer">
+													<div class="d-flex flex-row pb-3 pt-2 mt-3  border-top-0 border-left-0 border-right-0">
+														<div class="d-inline-block align-middle mr-3">
+															<span class="profile-image rounded-circle d-block" style="background-image:url('img/demo/avatars/avatar-admin.png'); background-size: cover;"></span>
+														</div>
+														<h5 class="mb-0 flex-1 fw-500">
+															홍길동
+															<small class="m-0 l-h-n">
+																AI 미래성장팀 / 홍길동<br>
+																KSPO-12345
+															</small>
+														</h5>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- // End 모바일 메뉴 -->
+									
+									<div class="chatArea">
+										<div class="group-titleArea">
+											<div class="title">저장 대화</div>
+										</div>
+
+										<div class="chat">
+
+											<div class="row justify-content-between">
+												<div class="col-lg-2 mb-3">
+													<select class="form-control form-control-sm">
+														<option>전체</option>
+														<option>일반 AI 비서</option>
+														<option>Agent AI 비서</option>
+														<option>업무특화 AI 비서</option>
+														<option>개인화 AI 비서 </option>
+													</select>
+												</div>
+												<div class="col-lg-4 mb-3">
+													<div class="input-group">
+														<input type="text" class="form-control form-control-sm" placeholder="질의 또는 내용으로 검색" aria-label="질의 또는 내용으로 검색" aria-describedby="button-addon5">
+														<div class="input-group-append">
+															<button class="btn btn-default btn-sm waves-effect waves-themed" type="button" id="button-addon5"><i class="fal fa-search"></i></button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12 pl-0 pr-0">
+												<div class="card-columns">
+													<div class="card">
+														<div class="w-100 pt-3 pl-3 p-2">
+															<span class="badge badge-secondary">일반 AI 비서</span>
+														</div>
+														<div class="card-body">
+															<a href="my-page-view.html">
+																<h5 class="card-title">경영평가 사전 점검결과를 바탕으로 평가 대응용 개선계획 (액션 플랜)</h5>
+																<p class="card-text">경영평가 사전 점검 결과, 상과관리 체계의 일관성 부족, 예산 집행의 시기 편중, 사회적 가치 성과의 체계적 정리 미흡, 디지털 혁신 과제의 전사적 연계 부족이 주요 개선과제로 도출되었으며, 이에 따라 전사 KPI</p>
+															</a>
+														</div>
+														<div class="card-footer d-flex justify-content-between align-items-center">
+															<small class="text-muted">2025-09-01 13:42</small>
+															<div>
+																<span class="mr-2"><a href="#">📌</a></span>
+																<span class="mr-2"><a href="#">🗑️</a></span>
+																<span><a href="#">🖊️</a></span>
+															</div>
+														</div>
+													</div>
+													<div class="card">
+														<div class="w-100 pt-3 pl-3 p-2">
+															<span class="badge badge-primary"> Agent AI 비서</span>
+														</div>
+														<div class="card-body">
+															<a href="my-page-view.html">
+																<h5 class="card-title">경영평가 사전 점검결과를 바탕으로 평가 대응용 개선계획 (액션 플랜)</h5>
+																<p class="card-text">경영평가 사전 점검 결과, 상과관리 체계의 일관성 부족, 예산 집행의 시기 편중, 사회적 가치 성과의 체계적 정리 미흡, 디지털 혁신 과제의 전사적 연계 부족이 주요 개선과제로 도출되었으며, 이에 따라 전사 KPI</p>
+															</a>
+														</div>
+														<div class="card-footer d-flex justify-content-between align-items-center">
+															<small class="text-muted">2025-09-01 13:42</small>
+															<div>
+																<span class="mr-2"><a href="#">📌</a></span>
+																<span class="mr-2"><a href="#">🗑️</a></span>
+																<span><a href="#">🖊️</a></span>
+															</div>
+														</div>
+													</div>
+													<div class="card">
+														<div class="w-100 pt-3 pl-3 p-2">
+															<span class="badge badge-dark"> 업무특화 AI 비서</span>
+														</div>
+														<div class="card-body">
+															<a href="my-page-view.html">
+																<h5 class="card-title">경영평가 사전 점검결과를 바탕으로 평가 대응용 개선계획 (액션 플랜)</h5>
+																<p class="card-text">경영평가 사전 점검 결과, 상과관리 체계의 일관성 부족, 예산 집행의 시기 편중, 사회적 가치 성과의 체계적 정리 미흡, 디지털 혁신 과제의 전사적 연계 부족이 주요 개선과제로 도출되었으며, 이에 따라 전사 KPI</p>
+															</a>
+														</div>
+														<div class="card-footer d-flex justify-content-between align-items-center">
+															<small class="text-muted">2025-09-01 13:42</small>
+															<div>
+																<span class="mr-2"><a href="#">📌</a></span>
+																<span class="mr-2"><a href="#">🗑️</a></span>
+																<span><a href="#">🖊️</a></span>
+															</div>
+														</div>
+													</div>
+
+													<div class="card">
+														<div class="w-100 pt-3 pl-3 p-2">
+															<span class="badge badge-warning"> 개인화 AI 비서</span>
+														</div>
+														<div class="card-body">
+															<a href="my-page-view.html">
+																<h5 class="card-title">경영평가 사전 점검결과를 바탕으로 평가 대응용 개선계획 (액션 플랜)</h5>
+																<p class="card-text">경영평가 사전 점검 결과, 상과관리 체계의 일관성 부족, 예산 집행의 시기 편중, 사회적 가치 성과의 체계적 정리 미흡, 디지털 혁신 과제의 전사적 연계 부족이 주요 개선과제로 도출되었으며, 이에 따라 전사 KPI</p>
+															</a>
+														</div>
+														<div class="card-footer d-flex justify-content-between align-items-center">
+															<small class="text-muted">2025-09-01 13:42</small>
+															<div>
+																<span class="mr-2"><a href="#">📌</a></span>
+																<span class="mr-2"><a href="#">🗑️</a></span>
+																<span><a href="#">🖊️</a></span>
+															</div>
+														</div>
+													</div>
+													<div class="card">
+														<div class="w-100 pt-3 pl-3 p-2">
+															<span class="badge badge-secondary">일반 AI 비서</span>
+														</div>
+														<div class="card-body">
+															<a href="my-page-view.html">
+																<h5 class="card-title">경영평가 사전 점검결과를 바탕으로 평가 대응용 개선계획 (액션 플랜)</h5>
+																<p class="card-text">경영평가 사전 점검 결과, 상과관리 체계의 일관성 부족, 예산 집행의 시기 편중, 사회적 가치 성과의 체계적 정리 미흡, 디지털 혁신 과제의 전사적 연계 부족이 주요 개선과제로 도출되었으며, 이에 따라 전사 KPI</p>
+															</a>
+														</div>
+														<div class="card-footer d-flex justify-content-between align-items-center">
+															<small class="text-muted">2025-09-01 13:42</small>
+															<div>
+																<span class="mr-2"><a href="#">📌</a></span>
+																<span class="mr-2"><a href="#">🗑️</a></span>
+																<span><a href="#">🖊️</a></span>
+															</div>
+														</div>
+													</div>
+													<div class="card">
+														<div class="w-100 pt-3 pl-3 p-2">
+															<span class="badge badge-secondary">일반 AI 비서</span>
+														</div>
+														<div class="card-body">
+															<a href="my-page-view.html">
+																<h5 class="card-title">경영평가 사전 점검결과를 바탕으로 평가 대응용 개선계획 (액션 플랜)</h5>
+																<p class="card-text">경영평가 사전 점검 결과, 상과관리 체계의 일관성 부족, 예산 집행의 시기 편중, 사회적 가치 성과의 체계적 정리 미흡, 디지털 혁신 과제의 전사적 연계 부족이 주요 개선과제로 도출되었으며, 이에 따라 전사 KPI</p>
+															</a>
+														</div>
+														<div class="card-footer d-flex justify-content-between align-items-center">
+															<small class="text-muted">2025-09-01 13:42</small>
+															<div>
+																<span class="mr-2"><a href="#">📌</a></span>
+																<span class="mr-2"><a href="#">🗑️</a></span>
+																<span><a href="#">🖊️</a></span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-lg-12 mt-3">
+												<nav aria-label="Page navigation example">
+													<ul class="pagination justify-content-center">
+														<li class="page-item">
+															<a class="page-link" href="#" aria-label="Previous">
+																<span aria-hidden="true"><i class="fal fa-angle-left"></i></span>
+															</a>
+														</li>
+														<li class="page-item"><a class="page-link" href="#">1</a></li>
+														<li class="page-item"><a class="page-link" href="#">2</a></li>
+														<li class="page-item"><a class="page-link" href="#">3</a></li>
+														<li class="page-item"><a class="page-link" href="#">4</a></li>
+														<li class="page-item"><a class="page-link" href="#">5</a></li>
+														<li class="page-item hidden"><a class="page-link" href="#">6</a></li>
+														<li class="page-item hidden"><a class="page-link" href="#">7</a></li>
+														<li class="page-item hidden"><a class="page-link" href="#">8</a></li>
+														<li class="page-item hidden"><a class="page-link" href="#">9</a></li>
+														<li class="page-item hidden"><a class="page-link" href="#">10</a></li>
+														<li class="page-item">
+															<a class="page-link" href="#" aria-label="Next">
+																<span aria-hidden="true"><i class="fal fa-angle-right"></i></span>
+															</a>
+														</li>
+													</ul>
+												</nav>
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</main>
+
+				</div>
+			</div>
+		</div>
+		<!-- END Page Wrapper -->
+
+	<!--나의 저장 목록 관리 -->
+	<div class="modal fade" id="group-admin" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">저장 대화</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true"><i class="fad fa-times fs-sm"></i></span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="p-2">
+						<p class="fs-xl"><span class="text-success">Q.</span> AI의 청정평수는 어떻게 되나요? 질문의 길이가 얼마나 길어지나요?</p>
+						<div class="mt-2">
+							<div class="input-group">
+								<input type="text" class="form-control form-control-sm" placeholder="새 그룹명을 입력하세요." aria-label="새 그룹명을 입력하세요." aria-describedby="button-addon5">
+								<div class="input-group-append">
+									<button class="btn btn-sm btn-success waves-effect waves-themed shadow-none" type="button" id="button-addon5">추가</button>
+								</div>
+							</div>
+							<p class="mt-3"><i class="fal fa-exclamation-triangle"></i> 관련 그룹/분류를 선택하여 저장/관리하세요.</p>
+							<div class="group-box">
+								<!--  카테고리가 없는 경우 -->
+								<div class="text-center">
+									<p class="mb-0">저장된 그룹이 없습니다.</p>
+									<p class="mb-0 text-warning">그룹을 추가하여 선택하세요. 중복 그룹 선택 가능합니다.</p>
+								</div>
+
+								<!-- 카테고리가 있는 경우 -->
+								<!--div class="frame-wrap">
+									<div class="custom-control custom-checkbox custom-control-inline">
+										<input type="checkbox" class="custom-control-input" id="defaultInline1">
+										<label class="custom-control-label" for="defaultInline1">카테고리 1</label>
+									</div>
+									<div class="custom-control custom-checkbox custom-control-inline">
+										<input type="checkbox" class="custom-control-input" id="defaultInline2">
+										<label class="custom-control-label" for="defaultInline2">카테고리 2</label>
+									</div>
+									<div class="custom-control custom-checkbox custom-control-inline">
+										<input type="checkbox" class="custom-control-input" id="defaultInlined">
+										<label class="custom-control-label" for="defaultInlined">카테고리 3</label>
+									</div>
+								</div-->
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer bg-primary">
+					<div class="row w-100 p-0 m-0">
+						<div class="col-6 text-center border-right border-light">
+							<button type="button" class="btn btn-block shadow-none fw-700 text-white">저장</button>
+						</div>
+						<div class="col-6 text-center">
+							<button type="button" class="btn btn-block shadow-none fw-700 text-white" data-dismiss="modal" aria-label="Close">취소</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/vendors.bundle.js"></script>
+	<script src="js/app.bundle.js"></script>
+
+	<script src="js/formplugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<script>
+
+		$(document).ready(function () {
+
+			$('.scroll_list').slimscroll({
+				height: '166px'
+			})
+
+			$('.scroll_list_mobile').slimscroll({
+				height: '124px'
+			})
+
+		});
+
+	</script>
+
+
+	<script src="js/notifications/sweetalert2/sweetalert2.bundle.js"></script>
+		<script>
+			var classHolder = document.querySelector('body'); 
+			
+			$(document).ready(function()
+			{
+				"use strict";
+				$("#js-sweetalert2-example-8").on("click", function()
+				{
+					var swalWithBootstrapButtons = Swal.mixin(
+					{
+						customClass:
+						{
+							confirmButton: "btn btn-primary",
+							cancelButton: "btn btn-danger mr-2"
+						},
+						buttonsStyling: false
+					});
+					swalWithBootstrapButtons
+						.fire(
+						{
+							title: "정말 삭제하시겠습니까?",
+							text: "삭제한 정보는 복구가 불가합니다.",
+							type: "warning",
+							showCancelButton: true,
+							confirmButtonText: "예",
+							cancelButtonText: "아니오",
+							reverseButtons: true
+						})
+						.then(function(result)
+						{
+							if (result.value)
+							{
+								swalWithBootstrapButtons.fire(
+									"삭제 완료",
+									"선택한 정보가 삭제되었습니다.",
+									"success"
+								);
+							}
+							else if (
+								// Read more about handling dismissals
+								result.dismiss === Swal.DismissReason.cancel
+							)
+							{
+								swalWithBootstrapButtons.fire(
+									"삭제 취소",
+									"삭제가 취소되었습니다.",
+									"error"
+								);
+							}
+						});
+				}); // A message with a custom image and CSS animation disabled
+				
+				document.getElementById('sideMain').addEventListener('click', function () {
+					
+					const newListContainer = document.getElementById('newList-container');
+					const myListContainer = document.getElementById('myList-container');
+
+					// newList, myList는 무조건 닫기
+					myListContainer.classList.add('d-none');
+					newListContainer.classList.add('d-none');
+				});
+				
+				document.getElementById('newList').addEventListener('click', function () {
+					
+					const newListContainer = document.getElementById('newList-container');
+					const myListContainer = document.getElementById('myList-container');
+
+					// myList는 무조건 닫기
+					myListContainer.classList.add('d-none');
+				});
+
+				document.getElementById('myList').addEventListener('click', function () {
+					
+					const newListContainer = document.getElementById('newList-container');
+					const myListContainer = document.getElementById('myList-container');
+
+					// newList는 무조건 닫기
+					newListContainer.classList.add('d-none');
+				});
+			});
+		</script>
+<script>
+  const bannedWords = ['금지어', '이름', '주민등록번호'];
+  const input = document.getElementById('textInput');
+  const warning = document.getElementById('warningLayer');
+
+  input.addEventListener('input', function () {
+    const value = input.value.toLowerCase();
+
+    const hasBannedWord = bannedWords.some(word =>
+      value.includes(word.toLowerCase())
+    );
+
+    if (hasBannedWord) {
+      warning.classList.add('show');
+    } else {
+      warning.classList.remove('show');
+    }
+  });
+</script>
+
+	</body>
+</html>
