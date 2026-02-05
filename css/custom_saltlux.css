@@ -147,6 +147,23 @@ mark, .mark {background-color:#009DE1;}
 .btn-new {background-image:linear-gradient(to right,  #00458D, #009DE1) !important; border:none;}
 .btn-primary:hover {background:#235A71;}
 
+/* 글자크기 변경 */
+.layer-popup {
+	position: absolute;
+	top: 4rem;
+	right:1rem;
+	padding: 10px 20px;
+	background: #fff;
+	border:1px solid #ddd;
+	border-radius: 10px;
+	display: none;
+	z-index: 1001;
+}
+
+.close-btn {
+	cursor: pointer;
+}
+
 /* 좌측패널 접힌 상태 */
 .nav-function-minify:not(.nav-function-top) .page-sidebar .primary-nav .nav-menu-full {display:none;}
 .nav-function-minify:not(.nav-function-top) .page-sidebar {padding:0 1rem 0 1rem;}
